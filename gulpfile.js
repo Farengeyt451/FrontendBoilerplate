@@ -51,6 +51,7 @@ var path = {
 	src: {
 		html: 'src/**/index.pug',
 		js: 'src/js/**/*.js',
+		manifest: 'src/manifest.json',
 		style: 'src/style/*.scss',
 		img: 'src/img/**/*.*',
 		fonts: 'src/fonts/**/*.*',
@@ -71,11 +72,8 @@ var path = {
 		production: 'production/*'
 	},
 	copysrc: {
-		fontawesom: 'node_modules/@fortawesome/fontawesome-free-webfonts/webfonts/*.*',
-		manifest: 'src/manifest.json',
 	},
 	copydest: {
-		fontawesom: 'src/fonts/webfonts/'
 	}
 };
 
@@ -99,7 +97,7 @@ var prodconf = {
 
 // Gulp task - 'Copy data'
 gulp.task('copy', function() {
-	var manifest = gulp.src(path.copysrc.manifest, {since: gulp.lastRun('copy')})
+	var manifest = gulp.src(path.src.manifest, {since: gulp.lastRun('copy')})
 		.pipe(gulpIf(isDevelopment, gulp.dest(path.build.manifest), gulp.dest(path.production.manifest)));
 	return merge(manifest);
 });
