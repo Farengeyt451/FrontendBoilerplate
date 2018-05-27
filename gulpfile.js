@@ -3,6 +3,7 @@
 // Gulp plugins
 const gulp = require('gulp'),
 			autoprefixer = require('gulp-autoprefixer'),
+			babel = require("gulp-babel"),
 			bs = require('browser-sync').create(),
 			cleancss = require('gulp-clean-css'),
 			concat = require('gulp-concat'),
@@ -138,8 +139,9 @@ gulp.task('js:build', function () {
 		.pipe(plumber())
 		.pipe(rigger())
 		.pipe(gulpIf(isDevelopment, sourcemaps.init()))
-		.pipe(gulpIf(!isDevelopment, uglify()))
+		.pipe(babel())
 		.pipe(gulpIf(isDevelopment, sourcemaps.write()))
+		.pipe(gulpIf(!isDevelopment, uglify()))
 		.pipe(gulpIf(isDevelopment, gulp.dest(path.build.js), gulp.dest(path.production.js)))
 		.pipe(bs.stream());
 });

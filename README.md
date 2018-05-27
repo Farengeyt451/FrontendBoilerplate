@@ -12,6 +12,15 @@ Starting kit for project assembly with gulp.js
 - [Jshint](https://github.com/uipoet/sublime-jshint)
 - [SCSS Lint](https://github.com/brigade/scss-lint)
 
+### Preprocessors
+
+- [Sass](http://sass-lang.com/)
+- [Pug](https://pugjs.org/api/getting-started.html)
+
+### Compiler
+
+- [Babel](https://babeljs.io/)
+
 ### Frontend libraries
 
 - [Bootstrap 4 Grid](https://github.com/m-spyratos/bootstrap-4-grid)
