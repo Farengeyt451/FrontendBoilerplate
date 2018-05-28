@@ -38,7 +38,7 @@ Starting kit for project assembly with gulp.js
 ### Setup
 
 ```
-git clone https://github.com/Farengeyt451/FrontendBoilerplate.git 'New Project'
+git clone https://github.com/Farengeyt451/FrontendBoilerplate.git
 ```
 
 ### Install dependencies
