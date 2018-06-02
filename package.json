@@ -3,17 +3,23 @@
   "version": "1.0.0",
   "description": "Frontend-boilerplate",
   "main": "index.js",
+  "scripts": {
+    "gulp-dev": "gulp",
+    "gulp-prod": "NODE_ENV=production gulp",
+    "gulp-clean": "gulp clean"
+  },
   "author": "Alexander Kislov",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
-    "browser-sync": "^2.23.6",
+    "browser-sync": "^2.24.4",
     "del": "^3.0.0",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-babel": "^7.0.1",
     "gulp-clean-css": "^3.9.3",
+    "gulp-cli": "^2.0.1",
     "gulp-concat": "^2.6.1",
     "gulp-debug": "^3.2.0",
     "gulp-if": "^2.0.2",
@@ -28,7 +34,10 @@
     "imagemin-jpegtran": "^5.0.2",
     "imagemin-optipng": "^5.2.1",
     "imagemin-svgo": "^6.0.0",
-    "merge-stream": "^1.0.1"
+    "jshint": "^2.9.5",
+    "merge-stream": "^1.0.1",
+    "pug-lint": "^2.5.0",
+    "sass-lint": "^1.12.1"
   },
   "dependencies": {
     "bootstrap-4-grid": "^2.4.0",
