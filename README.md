@@ -47,8 +47,8 @@ git clone https://github.com/Farengeyt451/FrontendBoilerplate.git
 
 ### Run
 
-| For development mode | For production mode        |
-| -------------------- | -------------------------- |
-| `gulp`               | `NODE_ENV=production gulp` |
+| For development mode | For production mode        | For cleaning build & prod folders         |
+| -------------------- | -------------------------- | ------------         |
+| `npm run gulp-dev`   | `npm run gulp-prod`        | `npm run gulp-clean` |
 
 
