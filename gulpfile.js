@@ -3,7 +3,7 @@
 // Gulp plugins
 const gulp = require('gulp'),
 			autoprefixer = require('gulp-autoprefixer'),
-			babel = require("gulp-babel"),
+			babel = require('gulp-babel'),
 			bs = require('browser-sync').create(),
 			cleancss = require('gulp-clean-css'),
 			concat = require('gulp-concat'),
