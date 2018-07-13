@@ -1,27 +1,21 @@
-@import
-	'vendors/normalize',
-	'vendors/bootstrap-4-grid';
+@import 'vendors/normalize';
+@import 'vendors/bootstrap-4-grid';
 
-@import
-	'utils/variables',
-	'utils/functions',
-	'utils/mixins';
+@import 'utils/variables';
+@import 'utils/functions';
+@import 'utils/mixins';
 
-@import
-	'base/reset',
-	'base/base',
-	'base/typography';
+@import 'base/reset';
+@import 'base/base';
+@import 'base/typography';
 
-@import
-	'layouts/general',
-	'layouts/navigation',
-	'layouts/header',
-	'layouts/content',
-	'layouts/footer';
+@import 'layouts/general';
+@import 'layouts/navigation';
+@import 'layouts/header';
+@import 'layouts/content';
+@import 'layouts/footer';
 
-@import
-	'modules/buttons',
-	'modules/carousel';
+@import 'modules/buttons';
+@import 'modules/carousel';
 
-@import
-	'media/media-queries';
+@import 'media/media-queries';
